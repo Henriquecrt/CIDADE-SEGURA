@@ -21,7 +21,7 @@ function adicionarNotificacao(texto) {
 }
 
 // Exemplo de uso
-adicionarNotificacao("Árvore caída na Rua das Flores. Evite a região.");
+adicionarNotificacao("a procurar.......");
 
 function ativarAltoContraste() {
     document.body.classList.toggle('alto-contraste');
