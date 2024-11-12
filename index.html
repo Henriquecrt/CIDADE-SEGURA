@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade Segura e Autossuficiente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Cidade Segura</h1>
+        <nav>
+            <ul>
+                <li><a href="#mapa">Mapa Seguro</a></li>
+                <li><a href="#notificacoes">Notificações</a></li>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mapa">
+            <h2>Mapa de Espaços Seguros</h2>
+            <div id="map-container">
+                <!-- Mapa será adicionado aqui -->
+                <iframe
+                width="100%"
+                height="400"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15911.886574812042!2d-40.91759002117103!3d-4.416384284499987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7945c23fce16b05%3A0xfffc4a5605e2ccda!2sCroat%C3%A1%2C%20CE%2C%2062390-000!5e0!3m2!1spt-BR!2sbr!4v1730837516803!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+            </div>
+            <div id="locais-seguros">
+                <h3>Locais Seguros Recomendados</h3>
+                <ul>
+                    <li><strong>Parque Central:</strong> Área de lazer com acessibilidade para cadeirantes e playground para crianças.</li>
+                    <li><strong>Ponto de Ônibus Adaptado - Av. Principal:</strong> Transporte com acessibilidade e rampas.</li>
+                    <li><strong>Centro de Saúde Municipal:</strong> Acesso a serviços de saúde com entrada adaptada.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="notificacoes">
+            <h2>Notificações e Alertas</h2>
+            <div id="alertas">
+                <div class="alerta">
+                    <strong>⚠️ Alerta de Trânsito:</strong> Rua Principal estará fechada para obras de manutenção até 10 de novembro.
+                </div>
+                <div class="alerta">
+                    <strong>🌧️ Condição Climática:</strong> Chuvas fortes previstas para amanhã. Evite áreas de risco de alagamento.
+                </div>
+                <!-- Mais alertas podem ser adicionados aqui -->
+            </div>
+            </div>
+        </section>
+
+        <section id="acessibilidade">
+            <h2>Acessibilidade e Inclusão</h2>
+            <p>Esta seção oferece informações sobre os recursos de acessibilidade e práticas inclusivas disponíveis na cidade, para garantir que todos os cidadãos possam participar ativamente da vida urbana.</p>
+        
+            <h3>Recursos de Acessibilidade</h3>
+            <ul>
+                <li><strong>Rampas de Acesso:</strong> Locais públicos com rampas para facilitar o acesso de cadeirantes e pessoas com mobilidade reduzida.</li>
+                <li><strong>Banheiros Adaptados:</strong> Banheiros públicos com acessibilidade, disponíveis em parques e praças.</li>
+            </ul>
+        
+            <h3>Recursos de Acessibilidade Digital</h3>
+            <ul>
+                <li><strong>Modo de Alto Contraste:</strong> <button onclick="ativarAltoContraste()">Ativar Alto Contraste</button>
+
+                <li><strong>Aumento de Fonte:</strong> 
+                <button onclick="aumentarFonte()">Aumentar Fonte</button> <button onclick="diminuirFonte()">Diminuir Fonte</button>
+
+                <li><strong>Leitura em Voz Alta:</strong> Ative a opção de leitura em voz alta para uma navegação mais acessível.</li>
+                <button onclick="lerTexto('')">Ouvir Texto</button>
+
+            </ul>
+
+        
+            <h3>Saiba Mais sobre Inclusão</h3>
+            <p>Para conhecer os direitos das pessoas com deficiência e como apoiar a inclusão em sua comunidade, consulte <a href="https://www.pessoacomdeficiencia.gov.br/">este link</a>.</p>
+        </section>
+        
+
+        <section id="contato">
+            <h2>Contato e Feedback</h2>
+            <form id="feedback-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+
+                <button type="submit">Enviar Feedback</button>
+            </form>
+            <div id="resposta"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cidade Segura</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
